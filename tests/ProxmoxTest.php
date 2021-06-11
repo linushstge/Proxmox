@@ -138,6 +138,23 @@ class ProxmoxTest extends TestCase
         new Proxmox($credentials, null, $httpClient);
     }
 
+    public function testCredentialsWithMailGatewaySystem()
+    {
+        $ids = [
+            'hostname' => 'some.proxmox.tld',
+            'username' => 'root',
+            'password' => 'I was here',
+            'system' => 'pmg',
+        ];
+
+        $fakeAuthToken = new AuthToken('csrf', 'ticket', 'username');
+        $proxmox = $this->getMockProxmox('login', $fakeAuthToken);
+        $proxmox->setCredentials($ids);
+
+        $credentials = $proxmox->getCredentials();
+
+        $this->assertEquals($credentials->getSystem(), 'pmg');
+    }
 
     public function testGetAndSetResponseType()
     {

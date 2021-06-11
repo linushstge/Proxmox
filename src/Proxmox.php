@@ -1,22 +1,22 @@
 <?php
 
 /**
- * This file is part of the ProxmoxVE PHP API wrapper library (unofficial).
+ * This file is part of the Proxmox PHP API wrapper library (unofficial).
  *
  * @copyright 2014 César Muñoz <zzantares@gmail.com>
  * @license http://opensource.org/licenses/MIT The MIT License.
  */
 
-namespace ProxmoxVE;
+namespace Proxmox;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Cookie\CookieJar;
 use GuzzleHttp\Psr7\Request;
 
-use ProxmoxVE\Exception\AuthenticationException;
+use Proxmox\Exception\AuthenticationException;
 
 /**
- * ProxmoxVE class. In order to interact with the proxmox server, the desired
+ * Proxmox class. In order to interact with the proxmox server, the desired
  * app's code needs to create and use an object of this class.
  *
  * @author César Muñoz <zzantares@gmail.com>
@@ -31,7 +31,7 @@ class Proxmox
     /**
      * Contains the proxmox server authentication data.
      *
-     * @var \ProxmoxVE\Credentials
+     * @var \Proxmox\Credentials
      */
     private $credentials;
 
@@ -55,10 +55,10 @@ class Proxmox
 
 
     /**
-     * Stores the ProxmoxVE user session such as ticket, username and csrf
+     * Stores the Proxmox user session such as ticket, username and csrf
      * prevention token, are all in there.
      *
-     * @var \ProxmoxVE\AuthToken
+     * @var \Proxmox\AuthToken
      */
     private $authToken;
 
@@ -71,9 +71,9 @@ class Proxmox
      * @param string $responseType The response type that is going to be returned when doing requests.
      * @param \GuzzleHttp\Client $httpClient The HTTP client to be used to send requests over the network.
      *
-     * @throws \ProxmoxVE\Exception\MalformedCredentialsException If bad args
+     * @throws \Proxmox\Exception\MalformedCredentialsException If bad args
      *                                                            supplied.
-     * @throws \ProxmoxVE\Exception\AuthenticationException If given credentials
+     * @throws \Proxmox\Exception\AuthenticationException If given credentials
      *                                                      are not valid.
      */
     public function __construct(
@@ -198,10 +198,10 @@ class Proxmox
      * Attempts to login using set credentials, if succeeded will return the
      * AuthToken used in all requests.
      *
-     * @return \ProxmoxVE\AuthToken When successful login will return an
+     * @return \Proxmox\AuthToken When successful login will return an
      *                              instance of the AuthToken class.
      *
-     * @throws \ProxmoxVE\Exception\AuthenticationException If login fails.
+     * @throws \Proxmox\Exception\AuthenticationException If login fails.
      */
     public function login()
     {
@@ -234,7 +234,7 @@ class Proxmox
     /**
      * Gets the Credentials object associated with this proxmox API instance.
      *
-     * @return \ProxmoxVE\Credentials Object containing all proxmox data used to
+     * @return \Proxmox\Credentials Object containing all proxmox data used to
      *                                connect to the server.
      */
     public function getCredentials()
@@ -244,12 +244,12 @@ class Proxmox
 
 
     /**
-     * Assign the passed Credentials object to the ProxmoxVE.
+     * Assign the passed Credentials object to the Proxmox.
      *
      * @param object $credentials A custom object holding credentials or a
      *                            Credentials object to assign.
      *
-     * @throws \ProxmoxVE\Exception\AuthenticationException If can not login.
+     * @throws \Proxmox\Exception\AuthenticationException If can not login.
      */
     public function setCredentials($credentials)
     {

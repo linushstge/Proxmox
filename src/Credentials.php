@@ -1,15 +1,15 @@
 <?php
 
 /**
- * This file is part of the ProxmoxVE PHP API wrapper library (unofficial).
+ * This file is part of the Proxmox PHP API wrapper library (unofficial).
  *
  * @copyright 2014 César Muñoz <zzantares@gmail.com>
  * @license http://opensource.org/licenses/MIT The MIT License.
  */
 
-namespace ProxmoxVE;
+namespace Proxmox;
 
-use ProxmoxVE\Exception\MalformedCredentialsException;
+use Proxmox\Exception\MalformedCredentialsException;
 
 /**
  * Credentials class. Handles all related data used to connect to a Proxmox
@@ -92,7 +92,7 @@ class Credentials
 
 
     /**
-     * Returns the base URL used to interact with the ProxmoxVE API.
+     * Returns the base URL used to interact with the Proxmox API.
      *
      * @return string The proxmox API URL.
      */

@@ -1,7 +1,7 @@
 Proxmox API Client for Proxmox VE & Proxmox MG
 ====================
 
-Forked from [https://github.com/ZzAntares/ProxmoxVE](ZzAntares)
+Forked from [https://github.com/ZzAntares/Proxmox](ZzAntares)
 
 License
 -------
@@ -18,6 +18,6 @@ Thank you! Take a look at the [CONTRIBUTING], you could easily set up a developm
 [LICENSE]:./LICENSE
 [CONTRIBUTING]:./CONTRIBUTING.md
 [PVE2 API Documentation]:http://pve.proxmox.com/pve-docs/api-viewer/index.html
-[ProxmoxVE API]:http://pve.proxmox.com/wiki/Proxmox_VE_API
+[Proxmox API]:http://pve.proxmox.com/wiki/Proxmox_VE_API
 [Proxmox wiki]:http://pve.proxmox.com/wiki
 [Composer]:https://getcomposer.org/

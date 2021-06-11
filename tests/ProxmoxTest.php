@@ -1,12 +1,12 @@
 <?php
 /**
- * This file is part of the ProxmoxVE PHP API wrapper library (unofficial).
+ * This file is part of the Proxmox PHP API wrapper library (unofficial).
  *
  * @copyright 2014 César Muñoz <zzantares@gmail.com>
  * @license http://opensource.org/licenses/MIT The MIT License.
  */
 
-namespace ProxmoxVE;
+namespace Proxmox;
 
 /**
  * @author César Muñoz <zzantares@gmail.com>
@@ -14,7 +14,7 @@ namespace ProxmoxVE;
 class ProxmoxTest extends TestCase
 {
     /**
-     * @expectedException \ProxmoxVE\Exception\MalformedCredentialsException
+     * @expectedException \Proxmox\Exception\MalformedCredentialsException
      */
     public function testExceptionIsThrownIfBadParamsPassed()
     {
@@ -23,7 +23,7 @@ class ProxmoxTest extends TestCase
 
 
     /**
-     * @expectedException \ProxmoxVE\Exception\MalformedCredentialsException
+     * @expectedException \Proxmox\Exception\MalformedCredentialsException
      */
     public function testExceptionIsThrownWhenNonAssociativeArrayIsGivenAsCredentials()
     {
@@ -34,7 +34,7 @@ class ProxmoxTest extends TestCase
 
 
     /**
-     * @expectedException \ProxmoxVE\Exception\MalformedCredentialsException
+     * @expectedException \Proxmox\Exception\MalformedCredentialsException
      */
     public function testExceptionIsThrownWhenIncompleteCredentialsArrayIsPassed()
     {
@@ -46,7 +46,7 @@ class ProxmoxTest extends TestCase
 
 
     /**
-     * @expectedException \ProxmoxVE\Exception\MalformedCredentialsException
+     * @expectedException \Proxmox\Exception\MalformedCredentialsException
      */
     public function testExceptionIsThrownWhenWrongCredentialsObjectIsPassed()
     {
@@ -56,7 +56,7 @@ class ProxmoxTest extends TestCase
 
 
     /**
-     * @expectedException \ProxmoxVE\Exception\MalformedCredentialsException
+     * @expectedException \Proxmox\Exception\MalformedCredentialsException
      */
     public function testExceptionIsThrownWhenIncompleteCredentialsObjectIsPassed()
     {
@@ -66,7 +66,7 @@ class ProxmoxTest extends TestCase
 
 
     /**
-     * @expectedException \ProxmoxVE\Exception\MalformedCredentialsException
+     * @expectedException \Proxmox\Exception\MalformedCredentialsException
      */
     public function testExceptionIsThrownWhenProtectedCredentialsObjectIsPassed()
     {
@@ -123,7 +123,7 @@ class ProxmoxTest extends TestCase
 
 
     /**
-     * @expectedException \ProxmoxVE\Exception\AuthenticationException
+     * @expectedException \Proxmox\Exception\AuthenticationException
      */
     public function testLoginErrorThrowsException()
     {

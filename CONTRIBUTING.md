@@ -14,7 +14,7 @@ Before making any contribution you should know:
 Installation
 ------------
 
-Of course you should [fork the repo](https://github.com/ZzAntares/ProxmoxVE/fork), then after cloning your forked repo:
+Of course you should [fork the repo](https://github.com/ZzAntares/Proxmox/fork), then after cloning your forked repo:
 
 ```sh
 $ composer install --dev  # Run command inside the project folder
@@ -23,20 +23,20 @@ $ composer install --dev  # Run command inside the project folder
 Using docker
 ------------
 
-If you have another conflicting PHP setup or you don't have any setup at all and you just want to code, you can use the `zzantares/php-proxmoxve` [docker image](https://hub.docker.com/r/zzantares/php-proxmoxve/) to have a complete development environment.
+If you have another conflicting PHP setup or you don't have any setup at all and you just want to code, you can use the `zzantares/php-Proxmox` [docker image](https://hub.docker.com/r/zzantares/php-Proxmox/) to have a complete development environment.
 
 After you have cloned your forked project, and with docker installed on your machine, inside the project directory, just run:
 
 ``` sh
-$ docker pull zzantares/php-proxmoxve
-$ docker run -v $(pwd):/root/proxmoxve -it zzantares/php-proxmoxve
+$ docker pull zzantares/php-Proxmox
+$ docker run -v $(pwd):/root/Proxmox -it zzantares/php-Proxmox
 ```
 
 Alternatively, the repository ships with a `Dockerfile` which also can be used by contributors in order to build that same image instead of pulling from the docker.io registry.
 
 ``` sh
-$ docker build -t php-proxmoxve .
-$ docker run -v $(pwd):/root/proxmoxve -it php-proxmoxve
+$ docker build -t php-Proxmox .
+$ docker run -v $(pwd):/root/Proxmox -it php-Proxmox
 ```
 
 Inside the container you have all the PHP extensions needed to develop PHP code for this project. The only step left is to install the project dependencies with composer:

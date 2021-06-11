@@ -3,7 +3,7 @@
     "type": "library",
     "description": "A simple PHP 7+ Proxmox API client for VE and MG.",
     "keywords": ["Proxmox", "API", "KVM", "OpenVZ", "Virtualization"],
-    "homepage": "https://github.com/ZzAntares/ProxmoxVE",
+    "homepage": "https://github.com/linushstge/Proxmox",
     "license": "MIT",
 
     "authors": [
@@ -37,7 +37,7 @@
 
     "autoload": {
         "psr-4": {
-            "ProxmoxVE\\": "src/"
+            "Proxmox\\": "src/"
         }
     }
 

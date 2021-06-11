@@ -1,12 +1,12 @@
 <?php
 /**
- * This file is part of the ProxmoxVE PHP API wrapper library (unofficial).
+ * This file is part of the Proxmox PHP API wrapper library (unofficial).
  *
  * @copyright 2014 César Muñoz <zzantares@gmail.com>
  * @license http://opensource.org/licenses/MIT The MIT License.
  */
 
-namespace ProxmoxVE;
+namespace Proxmox;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
@@ -21,7 +21,7 @@ class TestCase extends \PHPUnit_Framework_TestCase
     protected function getMockProxmox($method = null, $return = null)
     {
         if ($method) {
-            $proxmox = $this->getMockBuilder('ProxmoxVE\Proxmox')
+            $proxmox = $this->getMockBuilder('Proxmox\Proxmox')
                             ->setMethods(array($method))
                             ->disableOriginalConstructor()
                             ->getMock();
@@ -31,7 +31,7 @@ class TestCase extends \PHPUnit_Framework_TestCase
                     ->will($this->returnValue($return));
 
         } else {
-            $proxmox = $this->getMockBuilder('ProxmoxVE\Proxmox')
+            $proxmox = $this->getMockBuilder('Proxmox\Proxmox')
                             ->disableOriginalConstructor()
                             ->getMock();
         }

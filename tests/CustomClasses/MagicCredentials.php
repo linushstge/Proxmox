@@ -1,6 +1,6 @@
 <?php
 
-namespace ProxmoxVE\CustomClasses;
+namespace Proxmox\CustomClasses;
 
 class MagicCredentials
 {

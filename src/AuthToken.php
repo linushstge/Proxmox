@@ -1,13 +1,13 @@
 <?php
 
 /**
- * This file is part of the ProxmoxVE PHP API wrapper library (unofficial).
+ * This file is part of the Proxmox PHP API wrapper library (unofficial).
  *
  * @copyright 2014 César Muñoz <zzantares@gmail.com>
  * @license http://opensource.org/licenses/MIT The MIT License.
  */
 
-namespace ProxmoxVE;
+namespace Proxmox;
 
 /**
  * AuthToken class. Handles all data used when talking to a promxox server like

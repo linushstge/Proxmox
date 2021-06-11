@@ -1,7 +1,7 @@
 {
-    "name": "zzantares/proxmoxve",
+    "name": "linushstge/proxmox",
     "type": "library",
-    "description": "A simple PHP 5.5+ Proxmox API client.",
+    "description": "A simple PHP 7+ Proxmox API client for VE and MG.",
     "keywords": ["Proxmox", "API", "KVM", "OpenVZ", "Virtualization"],
     "homepage": "https://github.com/ZzAntares/ProxmoxVE",
     "license": "MIT",
@@ -11,18 +11,23 @@
             "name": "César Muñoz",
             "email": "zzantares@gmail.com",
             "role": "Developer"
+        },
+        {
+            "name": "Linus Holtstiege",
+            "email": "linus@hstge.de",
+            "role": "Developer"
         }
     ],
 
     "support": {
-        "issues": "https://github.com/ZzAntares/ProxmoxVE/issues",
-        "source": "https://github.com/ZzAntares/ProxmoxVE"
+        "issues": "https://github.com/linushstge/Proxmox/issues",
+        "source": "https://github.com/linushstge/Proxmox"
     },
 
     "require": {
-        "php": ">=5.5.0",
+        "php": ">=7.0.0",
         "lib-curl": "*",
-        "guzzlehttp/guzzle": "~6.0 || ~7.0"
+        "guzzlehttp/guzzle": "^7.0"
     },
 
     "require-dev": {
